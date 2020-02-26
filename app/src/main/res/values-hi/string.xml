@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">किसानों का बाजार</string>
+    <string name="buyer_s_list">क्रेता की सूची</string>
+    <string name="former_s_list">पूर्व की सूची</string>
+    <string name="buyer_registration">क्रेता पंजीकरण</string>
+    <string name="former_registration">पूर्व पंजीकरण</string>
+    <string name="consumers_list">उपभोक्ताओं की सूची</string>
+    <string name="field_officer_log_in">क्षेत्र अधिकारी लॉग इन करें</string>
+    <string name="consumer_login">उपभोक्ता लॉगिन</string>
+    <string name="consumer_registration">उपभोक्ता पंजीकरण</string>
+    <string name="former_login">पूर्व लॉगिन</string>
+    <string name="admin_log_in">व्यवस्थापक लॉग इन करें</string>
+    <string name="change_language">भाषा बदलो</string>
+    <string name="government_surveillance">सरकारी निगरानी</string>
+    <string name="change_role">Change Role</string>
+    <string name="select">चुनते हैं</string>
+    <string-array name="lang_array">
+        <item name="en" value="en">English</item>
+        <item name="hi" value="hi">हिंदी</item>
+    </string-array>
+    <string name="log_in">लॉग इन करें</string>
+    <string name="registration">पंजीकरण</string>
+    <string name="former">भूतपूर्व</string>
+    <string name="consumer">उपभोक्ता</string>
+    <string name="open">खुला</string>
+    <string name="close">बंद करे</string>
+    <string name="list">सूचना की सूची</string>
+</resources>

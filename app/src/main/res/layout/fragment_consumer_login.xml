@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ConsumerLoginFragment">
+    <TextView
+        android:id="@+id/txt_consumer_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cosumer_log_in"
+        android:textSize="@dimen/s16"
+        android:layout_above="@+id/txt_consumer_id"
+        android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_consumer_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/e_txt_consumer_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Consumer id"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_consumer_password_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_below="@+id/txt_consumer_id"
+                    android:layout_margin="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/e_txt_consumer_password_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:layout_marginTop="@dimen/d16"
+                        android:padding="@dimen/d16"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+           <Button
+               android:id="@+id/btn_sign_in"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/txt_consumer_password_login"
+               android:text="Sign in"
+               android:layout_margin="@dimen/d16"/>
+
+
+        </RelativeLayout>

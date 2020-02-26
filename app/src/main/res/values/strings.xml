@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FormerSMarket</string>
+    <string name="buyer_s_list">Buyer\'s List</string>
+    <string name="former_s_list">Former\'s List</string>
+    <string name="buyer_registration">Buyer Registration</string>
+    <string name="former_registration">Former Registration</string>
+    <string name="consumers_list">consumers list</string>
+    <string name="field_officer_log_in">field officer log in</string>
+    <string name="consumer_login">consumer login</string>
+    <string name="consumer_registration">consumer registration</string>
+    <string name="former_login">former login</string>
+    <string name="admin_log_in">admin log in</string>
+    <string name="change_language">Change Language</string>
+    <string name="government_surveillance">Government surveillance</string>
+    <string name="change_role">Change Role</string>
+    <string name="select">Select</string>
+    <string name="log_in">Log in</string>
+    <string name="registration">Registration</string>
+    <string name="former">Former</string>
+    <string name="consumer">Consumer</string>
+    <string name="list">List Of  Information</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="lang_array">
+        <item name="en" value="en">English</item>
+        <item name="hi" value="hi">Hindi</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="cosumer_log_in" translatable="false">Cosumer Log in</string>
+    <string name="help" translatable="false">jifosdfjmksdli am ramireddyf. i am going test iformation.fjsdkoflsdjl;fsdjkfsdaklfmsdfklsjhweiof;jsdklfsdjfiosdfmn;sdlkf;sdmfkldsfm;odsoksdpjfosdklfmsdlpfjsdmklfjsdfo;iklsdfj;sdoifkmsdfsdklfsd\'afslkfdlfuirlfdsfjf</string>
+    <string name="list_of_formers" translatable="false"><b>List of Formers:</b></string>
+    <string name="list_of_conumsers" translatable="false"><b>List of Conumsers:</b></string>
+    <string name="sign_in"><b>SIGN IN</b></string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "555167213959",
+    "firebase_url": "https://formersmarket.firebaseio.com",
+    "project_id": "formersmarket",
+    "storage_bucket": "formersmarket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555167213959:android:9fb209a335da9c07328b22",
+        "android_client_info": {
+          "package_name": "com.thrymr.formersmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555167213959-1sopj1nheegliiccleccofigt97phkfj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thrymr.formersmarket",
+            "certificate_hash": "84409807dfef81889ecaa9d135eb882bca2afa4f"
+          }
+        },
+        {
+          "client_id": "555167213959-o9lk2464s097t1n57g056oh4ukvo4g6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt0MoCi4jFQu0lR_22qwkxyy5z5UyZS6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555167213959-o9lk2464s097t1n57g056oh4ukvo4g6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

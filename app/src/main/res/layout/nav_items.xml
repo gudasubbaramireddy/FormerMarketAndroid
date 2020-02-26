@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/nav_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_more_vert_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="15sp"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/nav_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/log_in"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/btn_gov"
+            style="@style/BtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_login"
+            android:text="@string/government_surveillance" />
+
+        <TextView
+            android:id="@+id/btn_admin"
+            style="@style/BtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_gov"
+            android:text="@string/admin_log_in" />
+
+        <TextView
+            android:id="@+id/btn_former_login"
+            style="@style/BtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_admin"
+            android:text="@string/former_login" />
+        <TextView
+            android:id="@+id/btn_consumer_login"
+            style="@style/BtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_former_login"
+            android:text="@string/consumer_login" />
+
+        <TextView
+            android:id="@+id/btn_field_officer"
+            style="@style/BtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_consumer_login"
+            android:text="@string/field_officer_log_in" />
+
+        <TextView
+            android:id="@+id/txt_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/btn_field_officer"
+            android:text="@string/registration"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/btn_consumer_reg"
+            style="@style/BtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@id/txt_registration"
+            android:text="@string/consumer_registration" />
+
+
+        <TextView
+            android:id="@+id/btn_former_reg"
+            style="@style/BtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/btn_consumer_reg"
+            android:text="@string/former_registration" />
+
+        <TextView
+            android:id="@+id/txt_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/btn_former_reg"
+            android:text="@string/list"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btn_formers_list"
+        style="@style/BtnStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_list"
+        android:text="@string/former_s_list" />
+
+    <TextView
+        android:id="@+id/btn_consumers_list"
+        style="@style/BtnStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_formers_list"
+        android:text="@string/consumers_list" />
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
