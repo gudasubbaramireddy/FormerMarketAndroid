@@ -2,9 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/imv_former"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <com.thrymr.farmersmarket.utils.CircleImageView
+        android:id="@+id/imv_person"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_margin="4dp"/>
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_person"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

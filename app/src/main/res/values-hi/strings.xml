@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="sign_in">SIGN IN</string>
+    <string name="role">Role :</string>
+    <string name="farmer_s_market">Farmer\'s Market</string>
+    <string name="former_id">Former Id</string>
 </resources>

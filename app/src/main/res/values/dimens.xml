@@ -5,5 +5,9 @@
     <dimen name="dp200">200dp</dimen>
     <dimen name="d8">8dp</dimen>
     <dimen name="s8">8sp</dimen>
+    <dimen name="d50">50dp</dimen>
+    <dimen name="d100">100dp</dimen>
     <dimen name="s20">20sp</dimen>
+    <dimen name="d4">4dp</dimen>
+    <dimen name="d10">10dp</dimen>
 </resources>

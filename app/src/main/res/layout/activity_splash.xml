@@ -12,13 +12,15 @@
         android:layout_centerInParent="true">
     <androidx.appcompat.widget.AppCompatTextView
         style="@style/TextAppearance.AppCompat.Medium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="160dp"
-        android:minWidth="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp200"
         android:text="Former's Digital India"
         android:gravity="center"
-        android:textColor="@android:color/holo_green_dark"
+        android:textSize="27sp"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginRight="@dimen/d16"
+        android:background="@drawable/logo"
+        android:textColor="@android:color/white"
         />
     </RelativeLayout>
     <androidx.appcompat.widget.AppCompatTextView
@@ -26,5 +28,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Copyright  © 2019 Digital India"/>
+        android:layout_marginBottom="@dimen/d16"
+        android:text="Copyright  © 2020 Digital India"/>
 </RelativeLayout>

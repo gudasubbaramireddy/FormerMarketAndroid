@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
    <androidx.core.widget.NestedScrollView
        android:id="@+id/bottom_sheet"
@@ -23,38 +24,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/d16"
-    tools:context=".Fragments.ConsumerRegFragment">
-
-    <TextView
-        android:id="@+id/txt_consumer_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@string/consumer_registration"
-        android:textSize="@dimen/s16"
-        android:textStyle="bold" />
+    tools:context=".Fragments.RegFragment">
 
     <ScrollView
         android:id="@+id/scroll_consumer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/txt_consumer_fragment">
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/role"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="@dimen/d8"
+                android:layout_toLeftOf="@id/spr_role"/>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spr_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_role"
+                android:layout_alignParentRight="true" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txt_consumer_name"
+                style="@style/MyTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp">
+                android:layout_margin="8dp"
+                android:layout_below="@+id/txt_role">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/e_txt_consumer_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Consumer cName(ex:cName surname)"
+                    android:textColor="@color/black"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
             <LinearLayout
@@ -67,20 +75,20 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/txt_consumer_phone"
+                    style="@style/MyTextInputLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:layout_toLeftOf="@+id/txt_verify"
                     android:layout_below="@+id/txt_consumer_name"
-                    android:layout_margin="16dp">
+                    >
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/e_txt_phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Phone number"
-                        android:layout_marginTop="@dimen/d16"
-                        android:padding="@dimen/d16"
+                        android:textColor="@color/black"
                         android:inputType="phone" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,52 +102,58 @@
                     android:layout_alignParentRight="true"
                     android:layout_gravity="center"
                     android:textColor="@android:color/holo_red_light"
-                    android:text="Click this" />
+                    android:text="Verify" />
 
             </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txt_consumer_password"
+                style="@style/MyTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ll_phone"
-                android:layout_margin="16dp">
+                android:layout_margin="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/e_txt_consumer_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="create cPassword"
+                    android:textColor="@color/black"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txt_consumer_state"
+                style="@style/MyTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txt_consumer_password"
-                android:layout_margin="16dp">
+                android:layout_margin="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/e_txt_consumer_state"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="State"
+                    android:textColor="@color/black"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txt_consumer_district"
+                style="@style/MyTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txt_consumer_state"
-                android:layout_margin="16dp">
+                android:layout_margin="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/e_txt_consumer_district"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="District"
+                    android:textColor="@color/black"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -147,6 +161,8 @@
                 android:id="@+id/chk_city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+
                 android:layout_below="@id/txt_consumer_district" />
 
             <TextView
@@ -155,50 +171,57 @@
                 android:layout_below="@+id/txt_consumer_district"
                 android:layout_marginTop="5dp"
                 android:layout_toEndOf="@+id/chk_city"
+                android:textColor="@color/colorPrimary"
                 android:text="Are you in cCity" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txt_consumer_city"
+                style="@style/MyTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/chk_city"
-                android:layout_margin="16dp">
+                android:layout_margin="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/e_txt_consumer_city"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="City"
+                    android:textColor="@color/black"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txt_consumer_mandal"
+                style="@style/MyTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txt_consumer_city"
-                android:layout_margin="16dp">
+                android:layout_margin="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/e_txt_consumer_mandal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Mandal"
+                    android:textColor="@color/black"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txt_consumer_village"
+                style="@style/MyTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txt_consumer_mandal"
-                android:layout_margin="16dp">
+                android:layout_margin="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/e_txt_consumer_village"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:hint="d.no,street,fVillage" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -208,7 +231,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@+id/txt_consumer_village"
                 android:layout_centerHorizontal="true"
-                android:background="@android:color/darker_gray" />
+                android:background="@color/gray" />
 
             <Button
                 android:id="@+id/btn_upload_photo"

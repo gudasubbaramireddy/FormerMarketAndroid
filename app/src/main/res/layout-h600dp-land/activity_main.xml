@@ -26,7 +26,7 @@
     android:id="@+id/drawer_fragment"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:name="com.thrymr.formersmarket.Fragments.DrawerItemsFragment"
+    android:name="com.thrymr.farmersmarket.Fragments.DrawerItemsFragment"
     android:layout_gravity="start"
     tools:layout="@layout/fragment_drawer_items"
     />

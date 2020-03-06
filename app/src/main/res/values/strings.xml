@@ -7,7 +7,7 @@
     <string name="consumers_list">consumers list</string>
     <string name="field_officer_log_in">field officer log in</string>
     <string name="consumer_login">consumer login</string>
-    <string name="consumer_registration">consumer registration</string>
+    <string name="mRegistration">REGISTRATION</string>
     <string name="former_login">former login</string>
     <string name="admin_log_in">admin log in</string>
     <string name="change_language">Change Language</string>
@@ -33,4 +33,7 @@
     <string name="list_of_formers" translatable="false"><b>List of Formers:</b></string>
     <string name="list_of_conumsers" translatable="false"><b>List of Conumsers:</b></string>
     <string name="sign_in"><b>SIGN IN</b></string>
+    <string name="role">Role :</string>
+    <string name="farmer_s_market">Farmer\'s Market</string>
+    <string name="former_id">Former Id</string>
 </resources>
